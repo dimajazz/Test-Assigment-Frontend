@@ -1,0 +1,35 @@
+<div class="converter-container">
+  <h2 class="converter-title">Currency Converter</h2>
+  <div class="currency-item">
+    <select
+      [(ngModel)]="fromCurrency"
+      (change)="onCurrencyChange()"
+      title="currency"
+    >
+      <option *ngFor="let currency of rates | keyvalue" [value]="currency.key">
+        {{ currency.key }}
+      </option>
+    </select>
+    <input
+      type="number"
+      [(ngModel)]="amount1"
+      (input)="convertFromFirst()"
+      name="amount1"
+      required
+    />
+  </div>
+  <div class="currency-item">
+    <select [(ngModel)]="toCurrency" (change)="onCurrencyChange()">
+      <option *ngFor="let currency of rates | keyvalue" [value]="currency.key">
+        {{ currency.key }}
+      </option>
+    </select>
+    <input
+      type="number"
+      [(ngModel)]="amount2"
+      (input)="convertFromSecond()"
+      name="amount2"
+      required
+    />
+  </div>
+</div>

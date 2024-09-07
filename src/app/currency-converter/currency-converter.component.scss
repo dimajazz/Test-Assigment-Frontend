@@ -1,0 +1,37 @@
+.converter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: hsl(0, 100%, 100%);
+    box-shadow: 0px 3px 10px 0px hsla(0, 0%, 0%, 0.3);
+
+    .converter-title {
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .currency-item {
+        display: flex;
+        position: relative;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+
+        select, input {
+            outline: none;
+            padding: 0.3em;
+            font-size: 1em;
+            border: 1px solid hsl(0, 0%, 50%);
+            border-radius: 5px;
+
+            &:focus {
+                border-color: hsl(240, 70%, 70%);
+            }
+        }
+    }
+}

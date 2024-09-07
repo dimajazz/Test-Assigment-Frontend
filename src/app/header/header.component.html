@@ -1,0 +1,3 @@
+<div  class="currency-container">
+    <p *ngFor="let rate of rates | keyvalue">1 {{rate.key}} = {{rate.value}} {{toCurrency}}</p>
+</div>
