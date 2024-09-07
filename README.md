@@ -1,4 +1,4 @@
-# IsaninTestAssigmentFrontend
+# TestAssigmentFrontend
 
 ## Development server
 
